@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="row">
+
+        <!-- Sidebar Divi -->
+        <div class="gc2">
+            <div class="header3">
+                <ul class="headerMenu3">
+                    <li class="menuItem3">
+                        <a href="#"> Ana Sayfa
+                        </a>
+                    </li>
+                    <li class="menuItem3">
+                        <a href="#grid-layout">1. Grid Layout
+                        </a>
+                    </li>
+                    <li class="menuItem3">
+                        <a href="#c-palette">2. Color Palette
+                        </a>
+                    </li>
+                    <li class="menuItem3">
+                        <a href="#size">3. Text Size
+                        </a>
+                    </li>
+                    <li class="menuItem3">
+                        <a href="#font"> 4. Text Font
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#mgpd"> 5. Margin and Padding
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#sli"> 6. Slider
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#tab"> 7. Tables
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#ima"> 8. Images
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#btnn"> 9. Buttons
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#imaof"> 10. Images-Overflow
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#navm"> 11. Nav Menu
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#dropm"> 12. Dropdown Menu
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#for"> 13. Form
+                        </a>
+                    </li>
+
+                    <li class="menuItem3">
+                        <a href="#respons"> 14. Responsive
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- Body - Sidebar = Divi -->
+        <div class="gc10">
+
+            <!-- Welcome Page -->
+
+            <section id="grid-layout"
+            class="wPage">
+                <h1>Welcome to my first CSS Library</h1>
+            </section>
+
+            <section class="wPage2">
+                <h4>Made in <i style="font-size: 30px;">Azra</i></h1>
+            </section>
+            <br> <br>
+            <hr>
+
+            <!-- 1. Grid Layout -->
+
+            <section id="grid-layout" class="wPage1">
+                <h2>Grid Layout</h2>
+                <hr>
+                <p>
+                    Bu bölümde, viewportumun <strong>1 row</strong>/satır içinde eş <strong>12 column</strong>/sütuna
+                    bölünmesini ve ardından birleştirilmek istenen olası <strong>cell</strong>/hücre miktarlarına uygun
+                    <strong>class</strong>/sınıf yapılarını oluşturmayı hedefledim.
+                </p>
+
+                <p>Aşağıda HTML kodlarımın ilgili bir kısmını paylaşıyorum: </p>
+
+                <!-- Code Tag -->
+                <Textarea>
+
+                    &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;!-- gc=grid-column, 
+                        toplamda 12 column--&gt;
+                        &lt;div class=&quot;gc2 gcBox &quot;&gt;
+
+                            &lt;p&gt; Lorem, ipsum.&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;gc5 gcBox&quot;&gt;
+                            &lt;p&gt;Assumenda, atque. &lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;gc1 gcBox&quot;&gt;
+                            &lt;p&gt;Suscipit, placeat.&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;gc4 gcBox&quot;&gt;
+                            &lt;p&gt;Asperiores, quo?&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </Textarea>
+
+                <p>
+                    Row clası ile viewportumu 12 column a bölebilmek
+                    adına
+                    display:grid; ile grid-template-columns: kodlarını kullandım.
+                    Grid-gap ile celler arası boşluk belirttim.
+                    width ve margin değerleri ise kişisel olarak tercihimi yansıtmakta.
+                    Kütüphanemi kullanan kişiler "kişisel tercih" diye belirttiğim kısımlarda
+                    istedikleri inisiyatifi alabilirler.
+                </p>
+
+            </section>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <!-- gc=grid-column, toplamda 12 column-->
+                    <div class="gc2 gcBox ">
+                        <!-- font size classının kullanımına örnek -->
+                        <p> 2 Hücreyi birleştirdim.
+                            Bunun için
+                            gr-2 classını kullandım.
+                            Çünkü bu class içerisinde
+                            grid-column: span 2; css yer alıyor.
+                        </p>
+                    </div>
+
+                    <div class="gc5 gcBox">
+                        <p>
+                            5 Hücreyi birleştirdim.
+                            Bunun için
+                            gr-5 classını kullandım.
+                            Çünkü bu class içerisinde
+                            grid-column: span 5; css yer alıyor.
+                        </p>
+                    </div>
+
+                    <div class="gc1 gcBox">
+                        <p>Suscipit, placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo.</p>
+                    </div>
+
+                    <div class="gc4 gcBox">
+                        <p>Asperiores, quo?</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <!-- 2. Color Palette -->
+
+            <section id="c-palette" class="wPage3">
+                <h2>Color Palette</h2>
+                <hr>
+
+                <div class="colors1 ">
+                    <div class="bgRed">
+                        <div>
+                            <h4 class="txtRed"> Kırmızı</h4>
+                        </div>
+                        <div>
+                            <a class="btnRed">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgBlue">
+                        <div>
+                            <h4 class="txtBlue">Mavi</h4>
+                            <a class="btnBlue">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgGreen">
+                        <div>
+                            <h4 class="txtGreen">Yeşil</h4>
+                            <a class="btnGreen">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgYellow">
+                        <div>
+                            <h4 class="txtYellow">Sarı</h4>
+                            <a class="btnYellow">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgPurple">
+                        <div>
+                            <h4 class="txtPurple">Mor</h4>
+                            <a class="btnPurple">Renklen</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="colors2">
+                    <div class="bgBrown">
+                        <div>
+                            <h4 class="txtBrown">Kahverengi</h4>
+                            <a class="btnBrown">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgGray">
+                        <div>
+                            <h4 class="txtGray">Gri</h4>
+                            <a class="btnGray">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgOrange">
+                        <div>
+                            <h4 class="txtOrange">Turuncu</h4>
+                            <a class="btnOrange">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgPink">
+                        <div>
+                            <h4 class="txtPink">Pembe</h4>
+                            <a class="btnPink">Renklen</a>
+                        </div>
+                    </div>
+
+                    <div class="bgWhite">
+                        <div>
+                            <h4 class="txtWhite">Beyaz</h4>
+                            <a class="btnWhite">Renklen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Bu bölümde, <strong>Renk Paleti </strong> oluşturmayı hedefledim.
+                    Bunun için <strong>10 tane</strong> renk belirledim. Ardından
+                    belirlediğim her renk için ayrı <strong>5 ton</strong> belirledim.
+                    Bu süreçte dikkate aldığım kriter:
+                    <i>
+                        5 tonun birbirleriyle olan
+                        buton-text, text-background gibi ilişkilerinde yazılan textin görülebilir olmasıydı.
+                    </i>
+
+                </p>
+                <p>Aşağıda HTML kodlarımın ilgili bir kısmını paylaşıyorum: </p>
+
+                <textarea>
+                    &lt;div class=&quot;colors1 &quot;&gt;
+                    &lt;div class=&quot;bgRed&quot;&gt;
+                        &lt;div&gt;
+                            &lt;h4 class=&quot;txtRed&quot;&gt; Kırmızı&lt;/h4&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;a class=&quot;btnRed&quot;&gt;Renklen&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;bgBlue&quot;&gt;
+                        &lt;div&gt;
+                            &lt;h4 class=&quot;txtBlue&quot;&gt;Mavi&lt;/h4&gt;
+                            &lt;a class=&quot;btnBlue&quot;&gt;Renklen&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;bgPink&quot;&gt;
+                        &lt;div&gt;
+                            &lt;h4 class=&quot;txtPink&quot;&gt;Pembe&lt;/h4&gt;
+                            &lt;a class=&quot;btnPink&quot;&gt;Renklen&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+
+                </textarea>
+            </section>
+
+
+            <!-- 3. Text Size -->
+
+            <section id="size" class="wPage4">
+                <h2>Text Size</h2>
+                <hr>
+                <!-- Headers Class Örnekleri -->
+                <div class="hs1">
+                    <p>Css Library Headers</p>
+                </div>
+
+                <div class="hs2">
+                    <p>Css Library Headers</p>
+                </div>
+
+                <div class="hs3">
+                    <p>Css Library Headers</p>
+                </div>
+
+                <div class="hs4">
+                    <p>Css Library Headers</p>
+                </div>
+
+                <div class="hs5">
+                    <p>Css Library Headers</p>
+                </div>
+
+                <hr>
+
+                <!-- Fon Size Class Örnekleri -->
+
+                <div class="fs1">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs2">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs3">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs3">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs4">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs5">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs6">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs7">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs8">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs9">
+                    <p>Css Library Font Size</p>
+                </div>
+
+                <div class="fs10">
+                    <p>Css Library Font Size</p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <p>
+                    Bu bölümde, <strong>5</strong> tane <strong>Header</strong>
+                    font-size'ı ve <strong>10</strong> tane <strong>Text</strong> font-size'ı
+                    oluşturmayı hedefledim.
+                </p>
+
+                <p>Aşağıda HTML kodlarımın ilgili bir kısmını paylaşıyorum: </p>
+
+                <br>
+                <textarea class="ttfs">
+                    &lt;!-- Headers Class Örnekleri --&gt;
+                    &lt;div class=&quot;hs1&quot;&gt;
+                        &lt;p&gt;Css Library Headers&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;hs2&quot;&gt;
+                        &lt;p&gt;Css Library Headers&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;!-- Fon Size Class Örnekleri --&gt;
+    
+                    &lt;div class=&quot;fs1&quot;&gt;
+                        &lt;p&gt;Css Library Font Size&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;fs2&quot;&gt;
+                        &lt;p&gt;Css Library Font Size&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;fs3&quot;&gt;
+                        &lt;p&gt;Css Library Font Size&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;fs3&quot;&gt;
+                        &lt;p&gt;Css Library Font Size&lt;/p&gt;
+                    &lt;/div&gt;
+    
+
+                </textarea>
+
+            </section>
+
+            <!-- 4. Font Style -->
+            <section id="font" class="wPage5">
+                <h2>Font Style</h2>
+                <hr>
+
+                <p class="ft1">
+                    Css Library Font Style
+                </p>
+
+                <p class="ft2">
+                    Css Library Font Style
+                </p>
+
+                <p class="ft3">
+                    Css Library Font Style
+                </p>
+
+                <p class="ft4">
+                    Css Library Font Style
+                </p>
+
+                <p class="ft5">
+                    Css Library Font Style
+                </p>
+
+                <hr>
+
+                <p>
+                    Bu bölümde, <strong>5</strong> tane <strong>Font style</strong>
+                    class'ı oluşturmayı hedefledim.
+                </p>
+
+                <p>Aşağıda HTML kodlarımın ilgili bir kısmını paylaşıyorum: </p>
+
+
+                <textarea class="ttfs1">
+                    &lt;h2&gt;Font Style&lt;/h2&gt;
+                    &lt;hr&gt;
+    
+                    &lt;p class=&quot;ft1&quot;&gt;
+                        Css Library Font Style
+                    &lt;/p&gt;
+    
+                    &lt;p class=&quot;ft2&quot;&gt;
+                        Css Library Font Style
+                    &lt;/p&gt;
+    
+                    &lt;p class=&quot;ft3&quot;&gt;
+                        Css Library Font Style
+                    &lt;/p&gt;
+    
+                    &lt;p class=&quot;ft4&quot;&gt;
+                    Css Library Font Style
+                &lt;/p&gt;
+
+                &lt;p class=&quot;ft5&quot;&gt;
+                    Css Library Font Style
+                &lt;/p&gt;
+
+
+                </textarea>
+            </section>
+
+            <!-- 5. Margin and Padding -->
+            <section id="mgpd" class="wPage6">
+                <h2>
+                    Margin and Padding
+                </h2>
+                <hr>
+
+                <p>Margin için canlandırmalar:</p>
+
+                <div class="m0">
+                    <p>Her tarafa değer veren Margin</p>
+                </div>
+
+                <div class="mb1">
+                    <p>Alt tarafa değer veren Margin</p>
+                </div>
+
+                <div class=" mt1">
+                    <p>Üst tarafa değer veren Margin</p>
+                </div>
+
+                <div class="ms1">
+                    <p>Sol tarafa değer veren Margin</p>
+                </div>
+
+                <div class="me1">
+                    <p>Sağ tarafa değer veren Margin</p>
+                </div>
+
+                <hr>
+
+                <p>Css ve html kodlarımı taradığımda bir hata ile karışlaşmasam da
+                    canlandırmayı ne yazık ki gerçekleştiremedim.
+                </p>
+
+                <textarea class="ttfs1">
+                    &lt;p&gt;Margin için canlandırmalar:&lt;/p&gt;
+
+                    &lt;div class=&quot;m0&quot;&gt;
+                        &lt;p&gt;Her tarafa değer veren Margin&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;mb1&quot;&gt;
+                        &lt;p&gt;Alt tarafa değer veren Margin&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot; mt1&quot;&gt;
+                        &lt;p&gt;Üst tarafa değer veren Margin&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;ms1&quot;&gt;
+                        &lt;p&gt;Sol tarafa değer veren Margin&lt;/p&gt;
+                    &lt;/div&gt;
+    
+                    &lt;div class=&quot;me1&quot;&gt;
+                        &lt;p&gt;Sağ tarafa değer veren Margin&lt;/p&gt;
+                    &lt;/div&gt;
+                </textarea>
+            </section>
+            <br><br>
+
+            <!-- 6. SLider -->
+            <section id="sli" class="wPage7">
+                <h2>Slider</h2>
+                <hr>
+                <p>En çok zorlandığım bölüm.
+                    Açıkçası tam anlamıyla doğru yapamadığım için kodlarımı nasıl tanıtmalıyım emin olamadım.
+                </p>
+                <hr>
+                <div class="sliderContent">
+                    <div class="slider1">
+                        <img class="img1" src="assets/images/img1 (1).jpg">
+                        <img class="img1" src="assets/images/img1 (2).jpg">
+                        <img class="img1" src="assets/images/img1 (3).jpg">
+                    </div>
+                </div>
+
+                <div class="sliderContent2">
+                    <div class="slider2">
+                        <img class="img1" src="assets/images/img2 (1).jpg">
+                        <img class="img1" src="assets/images/img2 (2).jpg">
+                        <img class="img1" src="assets/images/img2 (3).jpg">
+                    </div>
+
+                </div>
+
+                <div class="sliderContent3">
+                    <button class="arrowLeft">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="arrowRight">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="slider3">
+                        <div class="img3">
+                            <img src="assets/images/img3 (1).jpg">
+                        </div>
+
+                        <div class="img3">
+                            <img src="assets/images/img3 (2).jpg">
+                        </div>
+
+                        <div class="img3">
+                            <img src="assets/images/img3 (3).jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <textarea class="ttfs1">
+        &lt;div class=&quot;sliderContent&quot;&gt;
+        &lt;div class=&quot;slider1&quot;&gt;
+            &lt;img class=&quot;img1&quot; src=&quot;assets/images/img1 (1).jpg&quot;&gt;
+            &lt;img class=&quot;img1&quot; src=&quot;assets/images/img1 (2).jpg&quot;&gt;
+            &lt;img class=&quot;img1&quot; src=&quot;assets/images/img1 (3).jpg&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;sliderContent2&quot;&gt;
+        &lt;div class=&quot;slider2&quot;&gt;
+            &lt;img class=&quot;img1&quot; src=&quot;assets/images/img2 (1).jpg&quot;&gt;
+            &lt;img class=&quot;img1&quot; src=&quot;assets/images/img2 (2).jpg&quot;&gt;
+            &lt;img class=&quot;img1&quot; src=&quot;assets/images/img2 (3).jpg&quot;&gt;
+        &lt;/div&gt;
+    
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;sliderContent3&quot;&gt;
+        &lt;button class=&quot;arrowLeft&quot;&gt;
+            &lt;i class=&quot;fa-solid fa-arrow-left&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class=&quot;arrowRight&quot;&gt;
+            &lt;i class=&quot;fa-solid fa-arrow-right&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;div class=&quot;slider3&quot;&gt;
+            &lt;div class=&quot;img3&quot;&gt;
+                &lt;img src=&quot;assets/images/img3 (1).jpg&quot;&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;img3&quot;&gt;
+                &lt;img src=&quot;assets/images/img3 (2).jpg&quot;&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;img3&quot;&gt;
+                &lt;img src=&quot;assets/images/img3 (3).jpg&quot;&gt;
+            &lt;/div&gt;
+    
+
+    </textarea>
+                <br><br>
+                <hr><b></b>
+                <p>Slider'larımı <strong>3 ana class</strong> içinde tanımlamaya çalıştım.
+                    Ardından hareket yönlerine uygun animasyonlamayı @keyframe üzerinden ayarlamaya çalıştım.
+                    1.Slider'ımda, slide edilirken ortaya çıkan renkli backgroundu kaldıramadım.
+                    2.Slider'da ki resimleri ise doğru ayarlayamadığım için width ve Heigth değerlerinde değişiklik
+                    yaptım.
+                    Normal koşullarda bu doğru kod yazımına aykırı bir eylem.
+                    3.Slider'ımda butonlara basılarak hareket ettirmeyi arzulasam da başarılı olamadım.
+                </p>
+            </section>
+
+            <!-- 7. Tables -->
+            <section id="tab" class="wPage8">
+                <h2>Tables</h2>
+                <hr>
+                <!-- Responsive Table -->
+                <table border="1" class="responsiveTable">
+                    <thead>
+                        <tr>
+                            <th>Meyve</th>
+                            <th>Sebze</th>
+                            <th>Sevgi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elma</td>
+                            <td>Havuç</td>
+                            <td>İlgi</td>
+                        </tr>
+                        <tr>
+                            <td>Muz</td>
+                            <td>Marul</td>
+                            <td>İnsan</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Bordered Table -->
+                <table class="borderedTable">
+                    <thead>
+                        <tr>
+                            <th>Meyve</th>
+                            <th>Sebze</th>
+                            <th>Sevgi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elma</td>
+                            <td>Havuç</td>
+                            <td>İlgi</td>
+                        </tr>
+                        <tr>
+                            <td>Muz</td>
+                            <td>Marul</td>
+                            <td>İnsan</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Striped Table -->
+
+                <table class="stripedTable">
+                    <thead>
+                        <tr>
+                            <th>Meyve</th>
+                            <th>Sebze</th>
+                            <th>Sevgi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elma</td>
+                            <td>Havuç</td>
+                            <td>İlgi</td>
+                        </tr>
+                        <tr>
+                            <td>Muz</td>
+                            <td>Marul</td>
+                            <td>İnsan</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Hoverable Table -->
+                <table class="hoverableTable">
+                    <thead>
+                        <tr>
+                            <th>Meyve</th>
+                            <th>Sebze</th>
+                            <th>Sevgi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elma</td>
+                            <td>Havuç</td>
+                            <td>İlgi</td>
+                        </tr>
+                        <tr>
+                            <td>Muz</td>
+                            <td>Marul</td>
+                            <td>İnsan</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <hr><br>
+                <textarea class="ttfs8">
+    &lt;!-- Responsive Table --&gt;
+    &lt;table class=&quot;hoverableTable&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Meyve&lt;/th&gt;
+                &lt;th&gt;Sebze&lt;/th&gt;
+                &lt;th&gt;Sevgi&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Elma&lt;/td&gt;
+                &lt;td&gt;Havuç&lt;/td&gt;
+                &lt;td&gt;İlgi&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Muz&lt;/td&gt;
+                &lt;td&gt;Marul&lt;/td&gt;
+                &lt;td&gt;İnsan&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    
+    &lt;!-- Bordered Table --&gt;
+    &lt;table class=&quot;borderedTable&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Meyve&lt;/th&gt;
+                &lt;th&gt;Sebze&lt;/th&gt;
+                &lt;th&gt;Sevgi&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Elma&lt;/td&gt;
+                &lt;td&gt;Havuç&lt;/td&gt;
+                &lt;td&gt;İlgi&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Muz&lt;/td&gt;
+                &lt;td&gt;Marul&lt;/td&gt;
+                &lt;td&gt;İnsan&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    
+    &lt;!-- Striped Table --&gt;
+    &lt;table class=&quot;stripedTable&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Meyve&lt;/th&gt;
+                &lt;th&gt;Sebze&lt;/th&gt;
+                &lt;th&gt;Sevgi&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Elma&lt;/td&gt;
+                &lt;td&gt;Havuç&lt;/td&gt;
+                &lt;td&gt;İlgi&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Muz&lt;/td&gt;
+                &lt;td&gt;Marul&lt;/td&gt;
+                &lt;td&gt;İnsan&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    
+    &lt;!-- Hoverable Table --&gt;
+    &lt;table class=&quot;hoverableTable&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Meyve&lt;/th&gt;
+                &lt;th&gt;Sebze&lt;/th&gt;
+                &lt;th&gt;Sevgi&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Elma&lt;/td&gt;
+                &lt;td&gt;Havuç&lt;/td&gt;
+                &lt;td&gt;İlgi&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Muz&lt;/td&gt;
+                &lt;td&gt;Marul&lt;/td&gt;
+                &lt;td&gt;İnsan&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+       
+                </textarea>
+                <br><br><br>
+                <hr>
+                <p>
+                    Farklı özelliklere sahip tablolar oluşturabilmek için
+                    oluşturduğum farklı classlardan faydalandım.
+                </p>
+            </section>
+
+
+            <!-- 8. Images -->
+            <section id="ima" class="wPage9">
+                <h2>Images</h2>
+                <hr><br><br>
+                <img class="image1" src="assets/images/image (1).jpg">
+                <img class="image2" src="assets/images/image (2).jpg">
+                <img class="image3" src="assets/images/image (3).jpg">
+                <img class="image4" src="assets/images/image (4).jpg">
+                <br>
+                <hr>
+                <p>Farklı classlarda image yapılandırmayı denemeye çalıştım.</p>
+                <textarea class="ttfs9">
+    &lt;img src=&quot;assets/images/image (1).jpg&quot;&gt;
+    &lt;img src=&quot;assets/images/image (2).jpg&quot;&gt;
+    &lt;img src=&quot;assets/images/image (3).jpg&quot;&gt;
+    &lt;img src=&quot;assets/images/image (4).jpg&quot;&gt;
+</textarea>
+            </section>
+
+            <!-- 9. Buttons -->
+            <section id="btnn" class="wPage10">
+                <h2>Buttons</h2>
+                <hr>
+                <br>
+                <section class="btnColors">
+                    <div>
+                        <!-- nBtn = Normal Button kısaltması -->
+                        <a class="nBtn">Renk</a>
+
+                    </div>
+                    <div>
+                        <!-- oBtn = Outline Button kısaltması -->
+                        <a class="oBtn">Renk</a>
+                    </div>
+                    <div>
+                        <a class="nRed">Kırmızı</a>
+                    </div>
+                    <div>
+                        <a class="nBlue">Mavi</a>
+                    </div>
+                    <div>
+                        <a class="nGreen">Yeşil</a>
+                    </div>
+                    <div>
+                        <a class="nPurple">Mor</a>
+                    </div>
+                    <div>
+                        <a class="nOrange">Turuncu</a>
+                    </div>
+                    <div>
+                        <a class="nGray">Gri</a>
+                    </div>
+                    <div>
+                        <a class="nYellow">Sarı</a>
+                    </div>
+
+                </section>
+                <br><br>
+                <p>Farklı buton classları:</p>
+                <br>
+                <textarea class="ttfs10">
+    &lt;section class=&quot;btnColors&quot;&gt;
+    &lt;div&gt;
+        &lt;!-- nBtn = Normal Button kısaltması --&gt;
+        &lt;a class=&quot;nBtn&quot;&gt;Renk&lt;/a&gt;
+
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;!-- oBtn = Outline Button kısaltması --&gt;
+        &lt;a class=&quot;oBtn&quot;&gt;Renk&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nRed&quot;&gt;Kırmızı&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nBlue&quot;&gt;Mavi&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nGreen&quot;&gt;Yeşil&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nPurple&quot;&gt;Mor&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nOrange&quot;&gt;Turuncu&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nGray&quot;&gt;Gri&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;a class=&quot;nYellow&quot;&gt;Sarı&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+</textarea>
+
+            </section>
+
+            <!-- 10. Images - Overflow -->
+            <section id="imaof" class="wPage11">
+                <h2>Images - Overflow</h2>
+                <hr>
+                <p>Overflow'larla çeşitlendirelim.</p>
+
+                <textarea>
+    &lt;div class=&quot;oflow1&quot;&gt;
+    &lt;!-- oflowM = overflow Middle --&gt;
+    &lt;img src=&quot;assets/images/image (1).jpg&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;oflow2&quot;&gt;
+    &lt;!-- oflowW = overflow Width --&gt;
+    &lt;img src=&quot;assets/images/image (5).jpg&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;oflow3&quot;&gt;
+    &lt;!-- oflowH = overflow Heigth --&gt;
+    &lt;img src=&quot;assets/images/image (3).jpg&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;oflow4&quot;&gt;
+    &lt;!-- oflowHn = overflow hidden --&gt;
+    &lt;img src=&quot;assets/images/image (4).jpg&quot;&gt;
+&lt;/div&gt;
+
+</textarea class="ttfs11" >
+<br>
+    oflow = overflow
+    <div class="oflow1">
+        oflowM = overflow Middle
+        <img src="assets/images/image (1).jpg">
+    </div>
+    <div class="oflow2">
+        oflowW = overflow Width
+        <img src="assets/images/image (5).jpg">
+    </div>
+    <div class="oflow3">
+        oflowH = overflow Heigth
+        <img src="assets/images/image (3).jpg">
+    </div>
+    <div class="oflow4">
+        oflowHn = overflow hidden
+        <img src="assets/images/image (4).jpg">
+    </div>
+            </section>
+
+
+            <!-- 11. Nav Menu -->
+            <section id="navm" class="wPage12">
+    <h2>Nav Menu</h2>
+    <hr>
+     <!--  Yatay Nav Bar -->
+
+     <div class="header1">
+        <ul class="headerMenu1">
+            <li class="menuItem1">
+                <a href="#"> Ana Sayfa
+                </a>
+            </li>
+            <li class="menuItem1">
+                <a href="#"> Hakkımızda
+                </a>
+            </li>
+            <li class="menuItem1">
+                <a href="#">Hedefler
+                </a>
+            </li>
+            <li class="menuItem1">
+                <a href="#"> Pörtfoy
+                </a>
+            </li>
+            <li class="menuItem1">
+                <a href="#">İletişim
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Block Nav Bar -->
+    <div class="header2">
+        <ul class="headerMenu2">
+            <li class="menuItem2">
+                <a href="#"> Ana Sayfa
+                </a>
+            </li>
+            <li class="menuItem2">
+                <a href="#"> Hakkımızda
+                </a>
+            </li>
+            <li class="menuItem2">
+                <a href="#">Hedefler
+                </a>
+            </li>
+            <li class="menuItem2">
+                <a href="#"> Pörtfoy
+                </a>
+            </li>
+            <li class="menuItem2">
+                <a href="#">İletişim
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Dikey Sola Yatık Nav Bar -->
+    <!-- <div class="header3">
+        <ul class="headerMenu3">
+            <li class="menuItem3">
+                <a href="#"> Ana Sayfa
+                </a>
+            </li>
+            <li class="menuItem3">
+                <a href="#"> Hakkımızda
+                </a>
+            </li>
+            <li class="menuItem3">
+                <a href="#">Hedefler
+                </a>
+            </li>
+            <li class="menuItem3">
+                <a href="#"> Portföy
+                </a>
+            </li>
+            <li class="menuItem3">
+                <a href="#">İletişim
+                </a>
+            </li>
+        </ul>
+    </div> -->
+
+    <p>Sabit navbarımı sitemde görebilirsiniz. Diğerlerini de inceleyebilirsiniz.</p>
+    <textarea class="ttfs12">
+        &lt;!--  Yatay Nav Bar --&gt;
+
+        &lt;div class=&quot;header1&quot;&gt;
+           &lt;ul class=&quot;headerMenu1&quot;&gt;
+               &lt;li class=&quot;menuItem1&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Ana Sayfa
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem1&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Hakkımızda
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem1&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt;Hedefler
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem1&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Pörtfoy
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem1&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt;İletişim
+                   &lt;/a&gt;
+               &lt;/li&gt;
+           &lt;/ul&gt;
+       &lt;/div&gt;
+   
+       &lt;!-- Block Nav Bar --&gt;
+       &lt;div class=&quot;header2&quot;&gt;
+           &lt;ul class=&quot;headerMenu2&quot;&gt;
+               &lt;li class=&quot;menuItem2&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Ana Sayfa
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem2&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Hakkımızda
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem2&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt;Hedefler
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem2&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Pörtfoy
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem2&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt;İletişim
+                   &lt;/a&gt;
+               &lt;/li&gt;
+           &lt;/ul&gt;
+       &lt;/div&gt;
+   
+       &lt;!-- Dikey Sola Yatık Nav Bar --&gt;
+       &lt;div class=&quot;header3&quot;&gt;
+           &lt;ul class=&quot;headerMenu3&quot;&gt;
+               &lt;li class=&quot;menuItem3&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Ana Sayfa
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem3&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Hakkımızda
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem3&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt;Hedefler
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem3&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt; Portföy
+                   &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li class=&quot;menuItem3&quot;&gt;
+                   &lt;a href=&quot;#&quot;&gt;İletişim
+                   &lt;/a&gt;
+               &lt;/li&gt;
+           &lt;/ul&gt;
+       &lt;/div&gt;
+   
+    </textarea>
+            </section>
+
+<br>
+            <!-- 12. Dropdown Menu -->
+<section id="dropm" class="wPage12">
+    <h2>DropDown Menu</h2>
+    <hr>
+    <div class="dropdown">
+
+        <ul class="dropMenu">
+            <li class="ddBtn">
+                <a href="#"> Ana Sayfa
+                </a>
+            </li>
+            <!-- ddBtn = Dropdown Buton -->
+            <li class="ddBtn">
+                <a href="#"> Hakkımızda
+                </a>
+                <!-- ddBtnC = Dropdown Buton Content -->
+
+                <ul class="ddBtnC">
+                    <li>
+                        <a href="#">Misyon</a>
+                    </li>
+                    <li>
+                        <a href="#">Vizyon</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ddBtn">
+                <a href="#">Hedefler
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Yakın Hedefler</a>
+                    </li>
+                    <li>
+                        <a href="#">Uzak Hedefler</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ddBtn">
+                <a href="#"> Portföy
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Galeri</a>
+                    </li>
+                    <li>
+                        <a href="#">Haberler</a>
+                    </li>
+                    <li>
+                        <a href="#">Dosyalar</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ddBtn">
+                <a href="#">İletişim
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Mail</a>
+                    </li>
+                    <li>
+                        <a href="#">Adres</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <br><hr><br>
+    <textarea class="ttsf4">
+        &lt;div class=&quot;dropdown&quot;&gt;
+
+        &lt;ul class=&quot;dropMenu&quot;&gt;
+            &lt;li class=&quot;ddBtn&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt; Ana Sayfa
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;!-- ddBtn = Dropdown Buton --&gt;
+            &lt;li class=&quot;ddBtn&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt; Hakkımızda
+                &lt;/a&gt;
+                &lt;!-- ddBtnC = Dropdown Buton Content --&gt;
+
+                &lt;ul class=&quot;ddBtnC&quot;&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Misyon&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Vizyon&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;ddBtn&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Hedefler
+                &lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Yakın Hedefler&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Uzak Hedefler&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;ddBtn&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt; Portföy
+                &lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Galeri&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Haberler&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Dosyalar&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;ddBtn&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;İletişim
+                &lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Mail&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot;&gt;Adres&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    </textarea>
+</section>
+
+
+
+
+            <!-- 13. Form -->
+<section id="for" class="wPg">
+    <h2>Form</h2>
+    <hr>
+    <form>
+        <label for="adsoy">Ad-Soyad:</label>
+        <input type="text" id="adsoy" name="adsoy">
+        <br>
+        <label for="soru">Dünyalı mısın?:</label>
+        <br>
+        <input type="radio" id="1" name="1" value="1">
+        <label for="html">Evet</label><br>
+        <input type="radio" id="2" name="2" value="2">
+        <label for="css">Hayır</label><br>
+        <br>
+        <label for="gonder">Gönder:</label><br>
+        <input type="text1" id="gonder" name="gonder" value="Gönder">
+        <input type="submit" value="Vazgeç">
+    </form>
+
+    <p>Problemin nerede olduğunu keşfedemedim ne yazık ki.
+
+    </p>
+</section>
+
+            <!-- 14. Responsive -->
+<section id="respons" class="">
+    <h2>Responsive</h2>
+    <hr>
+    <template>
+        @media only screen and (max-width: 1024px) {
+            .gc-m-1 {
+                grid-column: span 1;
+            }
+        
+            .gc-m-2 {
+                grid-column: span 2;
+            }
+        
+            .gc-m-3 {
+        
+                grid-column: span 3;
+        
+            }
+        
+            .gc-m-4 {
+                grid-column: span 4;
+        
+            }
+        
+            .gc-m-5 {
+                grid-column: span 5;
+        
+            }
+        
+            .gc-m-6 {
+                grid-column: span 6;
+        
+            }
+        
+            .gc-m-7 {
+                grid-column: span 7;
+            }
+        
+            .gc-m-8 {
+                grid-column: span 8;
+        
+            }
+        
+            .gc-m-9 {
+                grid-column: span 9;
+            }
+        
+            .gc-m-10 {
+                grid-column: span 10;
+            }
+        
+            .gc-m-11 {
+                grid-column: span 11;
+        
+            }
+        
+            .gc-m-12 {
+                grid-column: span 12;
+            }
+        
+        
+        }
+        
+        
+        @media only screen and (max-width: 768px) {
+            .gc-s-1 {
+                grid-column: span 1;
+            }
+        
+            .gc-s-2 {
+                grid-column: span 2;
+            }
+        
+            .gc-s-3 {
+        
+                grid-column: span 3;
+        
+            }
+        
+            .gc-s-4 {
+                grid-column: span 4;
+        
+            }
+        
+            .gc-s-5 {
+                grid-column: span 5;
+        
+            }
+        
+            .gc-s-6 {
+                grid-column: span 6;
+        
+            }
+        
+            .gc-s-7 {
+                grid-column: span 7;
+            }
+        
+            .gc-s-8 {
+                grid-column: span 8;
+        
+            }
+        
+            .gc-s-9 {
+                grid-column: span 9;
+            }
+        
+            .gc-s-10 {
+                grid-column: span 10;
+            }
+        
+            .gc-s-11 {
+                grid-column: span 11;
+        
+            }
+        
+            .gc-s-12 {
+                grid-column: span 12;
+            }
+        
+        
+        }
+        
+    </template>
+</section>
+        </div>
+    </div>
+
+</body>
+
+</html>

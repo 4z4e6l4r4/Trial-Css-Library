@@ -1,0 +1,1638 @@
+/* ROOT */
+
+:root {
+
+    /* 2. COLORS  */
+    /* Renk tonları 1 de en kalın ve daha büyük rakamlarda daha açık  */
+    /* Red */
+    --color-tone1-red: #420c09;
+    --color-tone2-red: #d802026b;
+    --color-tone3-red: #d80202;
+    --color-tone4-red: #b03a3a;
+    --color-tone5-red: #d99f9f;
+
+    /* Blue */
+    --color-tone1-blue: #00004d;
+    --color-tone2-blue: #1f80aa9b;
+    --color-tone3-blue: #26619c;
+    --color-tone4-blue: #48c9fc;
+    --color-tone5-blue: #87cfebd6;
+
+    /* Green */
+    --color-tone1-green: #14452F;
+    --color-tone2-green: #3DAC78;
+    --color-tone3-green: #83a381;
+    --color-tone4-green: #6fe2a3;
+    --color-tone5-green: #64e9ab;
+
+    /* Yellow */
+    --color-tone1-yellow: #7a7602;
+    --color-tone2-yellow: #a39e09;
+    --color-tone3-yellow: #f9e324;
+    --color-tone4-yellow: #FAF331;
+    --color-tone5-yellow: #f3efaa;
+
+    /* Purple */
+    --color-tone1-purple: #301934;
+    --color-tone2-purple: #5a026f;
+    --color-tone3-purple: #800080;
+    --color-tone4-purple: #c979d7d4;
+    --color-tone5-purple: #baa5dc;
+
+    /* Brown */
+    --color-tone1-brown: #673e01;
+    --color-tone2-brown: #7F4F24;
+    --color-tone3-brown: #936639;
+    --color-tone4-brown: #a88363;
+    --color-tone5-brown: #b6ad90;
+
+    /* Gray */
+    --color-tone1-gray: #343434;
+    --color-tone2-gray: #5a5a5a;
+    --color-tone3-gray: #939393;
+    --color-tone4-gray: #b6b6b6;
+    --color-tone5-gray: #d7d7d7;
+
+    /* Orange */
+    --color-tone1-orange: #F05E16;
+    --color-tone2-orange: #FA9C1B;
+    --color-tone3-orange: #e38500;
+    --color-tone4-orange: #F7BE6D;
+    --color-tone5-orange: #f6d7ac;
+
+    /* Pink */
+    --color-tone1-pink: #980142;
+    --color-tone2-pink: #c30155;
+    --color-tone3-pink: #e7478cd1;
+    --color-tone4-pink: #e5699f;
+    --color-tone5-pink: #f19bdc;
+
+    /* White */
+    --color-tone1-white: #3d3d3d;
+    --color-tone2-white: #5f5f5f;
+    --color-tone3-white: #a19b9b;
+    --color-tone4-white: #dec1cc;
+    --color-tone5-white: #ffffd3;
+    --color-tone6-white: #f5f5f5;
+
+    /* 3. FONT-SIZE */
+    /* Headers */
+    /* hs = Headers 'ın kısaltması */
+    --hs1: 80px;
+    --hs2: 70px;
+    --hs3: 60px;
+    --hs4: 50px;
+    --hs5: 40px;
+
+    /* Texts */
+    /* fs = Font-size kısaltması */
+    --fs1: 26px;
+    --fs2: 24px;
+    --fs3: 22px;
+    --fs4: 20px;
+    --fs5: 18px;
+    --fs6: 16px;
+    --fs7: 14px;
+    --fs8: 12px;
+    --fs9: 10px;
+    --fs10: 8px;
+
+    /* 3. FONT-STILL */
+    /* ft = font-still kısaltması */
+    --ft1: 'Times New Roman', Times, serif;
+    --ft2: Arial, Helvetica, sans-serif;
+    --ft3: Arial, Verdana, Tahoma;
+    --ft4: Georgia, Verdana, Garamond, serif;
+    --ft5: Arial, Tahoma, Trebuchet (sans-serif);
+
+    /* MARGIN AND PADDING */
+    --mp0: 0px;
+    --mp1: 20px;
+    --mp2: 30px;
+    --mp3: 40px;
+    --mp4: 50px;
+    --mp5: 60px;
+    --mp6: 70px;
+
+    /* SLIDER */
+
+    /* TABLES */
+
+    /* IMAGES */
+
+    /* BUTTON TYPES */
+}
+
+/* 1. GRID  LAYOUT*/
+/* .container {
+    background-color: #85ede2a8;
+    border-radius: 10px;
+    border: 2px dashed #00004d;
+} */
+
+.row {
+    display: grid;
+    /* width: calc(100% - 20px); */
+    /* margin: 10px; */
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-gap: 20px; */
+}
+
+/* .gcBox {
+    background-color: #d8abebd6;
+    width: 100%;
+    border: 2px solid #301934;
+    border-radius: 20px;
+    text-align: center;
+} */
+
+/* p {
+    width: 100%;
+} */
+
+.gc1 {
+    grid-column: span 1;
+}
+
+.gc2 {
+    grid-column: span 2;
+}
+
+.gc3 {
+    /* grid-column: 1/3; yerine span kullandım.
+    Çünkü span direkt hücreleri birleştirebiliyor anladığım kadarıyla.*/
+    grid-column: span 3;
+
+}
+
+.gc4 {
+    grid-column: span 4;
+
+}
+
+.gc5 {
+    grid-column: span 5;
+
+}
+
+.gc6 {
+    grid-column: span 6;
+
+}
+
+.gc7 {
+    grid-column: span 7;
+}
+
+.gc8 {
+    grid-column: span 8;
+
+}
+
+.gc9 {
+    grid-column: span 9;
+}
+
+.gc10 {
+    grid-column: span 10;
+}
+
+.gc11 {
+    grid-column: span 11;
+
+}
+
+.gc12 {
+    grid-column: span 12;
+}
+
+
+
+
+/* 2. Color */
+/* Red */
+.bgRed {
+    background-color: var(--color-tone1-red);
+}
+
+.txtRed {
+    color: var(--color-tone5-red) !important;
+}
+
+.btnRed {
+    background-color: var(--color-tone5-red);
+    transition: background-color 1s;
+}
+
+.btnRed:hover {
+    background-color: var(--color-tone4-red) !important;
+}
+
+/* Blue */
+.bgBlue {
+    background-color: var(--color-tone1-blue);
+}
+
+.txtBlue {
+    color: var(--color-tone4-blue) !important;
+}
+
+.btnBlue {
+    background-color: var(--color-tone3-blue);
+    transition: background-color 1s;
+}
+
+.btnBlue:hover {
+    background-color: var(--color-tone2-blue) !important;
+}
+
+/* Green */
+
+.bgGreen {
+    background-color: var(--color-tone1-green);
+}
+
+.txtGreen {
+    color: var(--color-tone3-green);
+
+}
+
+.btnGreen {
+    background-color: var(--color-tone2-green);
+    transition: background-color 1s;
+}
+
+.btnGreen:hover {
+    background-color: var(--color-tone5-green);
+}
+
+/* Yellow */
+.bgYellow {
+    background-color: var(--color-tone3-yellow);
+}
+
+.txtYellow {
+    color: var(--color-tone1-yellow);
+
+}
+
+.btnYellow {
+    background-color: var(--color-tone3-yellow);
+    transition: background-color 1s;
+}
+
+.btnYellow:hover {
+    background-color: var(--color-tone5-yellow) !important;
+}
+
+/* Purple */
+.bgPurple {
+    background-color: var(--color-tone5-purple);
+}
+
+.txtPurple {
+    color: var(--color-tone1-purple) !important;
+}
+
+.btnPurple {
+    background-color: var(--color-tone3-purple);
+    transition: background-color 1s;
+}
+
+.btnPurple:hover {
+    background-color: var(--color-tone4-purple);
+}
+
+/* Brown */
+.bgBrown {
+    background-color: var(--color-tone5-brown);
+}
+
+
+.txtBrown {
+    color: var(--color-tone2-brown);
+}
+
+.btnBrown {
+    background-color: var(--color-tone3-brown);
+    transition: background-color 1s;
+
+}
+
+.btnBrown:hover {
+    background-color: var(--color-tone4-brown);
+}
+
+/* Gray */
+.bgGray {
+    background-color: var(--color-tone5-gray);
+}
+
+.txtGray {
+    color: var(--color-tone2-gray);
+
+}
+
+.btnGray {
+    background-color: var(--color-tone3-gray);
+    transition: background-color 1s;
+
+}
+
+.btnGray:hover {
+    background-color: var(--color-tone4-gray) !important;
+
+}
+
+/* Orange */
+.bgOrange {
+    background-color: var(--color-tone4-orange);
+}
+
+
+.txtOrange {
+    color: var(--color-tone1-orange);
+}
+
+.btnOrange {
+    background-color: var(--color-tone2-orange);
+    transition: background-color 1s;
+}
+
+.btnOrange:hover {
+    background-color: var(--color-tone3-orange);
+}
+
+/* Pink */
+.bgPink {
+    background-color: var(--color-tone4-pink);
+}
+
+.txtPink {
+    color: var(--color-tone1-pink);
+
+}
+
+.btnPink {
+    background-color: var(--color-tone5-pink);
+    transition: background-color 1s;
+}
+
+.btnPink:hover {
+    background-color: var(--color-tone3-pink);
+}
+
+/* White */
+.bgWhite {
+    background-color: var(--color-tone6-white);
+}
+
+.txtWhite {
+    color: var(--color-tone4-white);
+}
+
+.btnWhite {
+    background-color: var(--color-tone5-white);
+    transition: background-color 1s;
+}
+
+.btnWhite:hover {
+    background-color: var(--color-tone3-white);
+}
+
+
+
+/* 3. FONT-SIZE */
+/* Headers */
+/* Default h taglerinden farklı olması adına headers'ın kısatlması çeklinde
+hs kısaltması kullanıldı. Font-size büyüklük değer sıralaması h tagleri ile aynı yönlüdür.*/
+
+.hs1 {
+    font-size: var(--hs1);
+}
+
+.hs2 {
+    font-size: var(--hs2);
+}
+
+.hs3 {
+    font-size: var(--hs3);
+}
+
+.hs4 {
+    font-size: var(--hs4);
+}
+
+.hs5 {
+    font-size: var(--hs5);
+}
+
+/* Texts */
+/* fs = Font-size kısaltması 
+büyüklük 1'den 10'a doğru azalır.*/
+.fs1 {
+    font-size: var(--fs1);
+}
+
+.fs2 {
+    font-size: var(--fs2);
+}
+
+.fs3 {
+    font-size: var(--fs3);
+}
+
+.fs4 {
+    font-size: var(--fs4);
+}
+
+.fs5 {
+    font-size: var(--fs5);
+}
+
+.fs6 {
+    font-size: var(--fs6);
+}
+
+.fs7 {
+    font-size: var(--fs7);
+}
+
+.fs8 {
+    font-size: var(--fs8);
+}
+
+.fs9 {
+    font-size: var(--fs9);
+}
+
+.fs10 {
+    font-size: var(--fs10);
+}
+
+
+
+/* 4. FONT-STYLE */
+/* ft = font-style kısaltması 
+Kaynakça: https://www.w3schools.com/cssref/css_websafe_fonts.php */
+.ft1 {
+    font-family: var(--ft1);
+}
+
+.ft2 {
+    font-family: var(--ft2);
+}
+
+.ft3 {
+    font-family: var(--ft3);
+}
+
+.ft4 {
+    font-family: var(--ft4);
+}
+
+.ft5 {
+    font-family: var(--ft5);
+}
+
+
+
+/* MARGIN AND PADDING */
+
+/* Margin Zero */
+
+.m0 {
+    margin: var(--mp0);
+}
+
+.m1 {
+    margin: var(--mp1);
+}
+
+.m2 {
+    margin: var(--mp2);
+}
+
+.m3 {
+    margin: var(--mp3);
+}
+
+.m4 {
+    margin: var(--mp4);
+}
+
+.m5 {
+    margin: var(--mp5);
+}
+
+/* Margin Bottom */
+
+.mb0 {
+    margin-bottom: var(--mp0);
+}
+
+.mb1 {
+    margin-bottom: var(--mp1);
+}
+
+.mb2 {
+    margin-bottom: var(--mp2);
+}
+
+.mb3 {
+    margin-bottom: var(--mp3);
+}
+
+.mb4 {
+    margin-bottom: var(--mp4);
+}
+
+.mb5 {
+    margin-bottom: var(--mp5);
+}
+
+/* Margin Top */
+
+.mt0 {
+    margin-top: var(--mp0);
+}
+
+.mt1 {
+    margin-top: var(--mp1);
+}
+
+.mt2 {
+    margin-top: var(--mp2);
+}
+
+.mt3 {
+    margin-top: var(--mp3);
+}
+
+.mt4 {
+    margin-top: var(--mp4);
+}
+
+.mt5 {
+    margin-top: var(--mp5);
+}
+
+/* Margin Left */
+
+.ms0 {
+    margin-left: var(--mp0);
+}
+
+.ms1 {
+    margin-left: var(--mp1);
+}
+
+.ms2 {
+    margin-left: var(--mp2);
+}
+
+.ms3 {
+    margin-left: var(--mp3);
+}
+
+.ms4 {
+    margin-left: var(--mp4);
+}
+
+.ms5 {
+    margin-left: var(--mp5);
+}
+
+/* Margin Right */
+
+.me0 {
+    margin-right: var(--mp0);
+}
+
+.me1 {
+    margin-right: var(--mp1);
+}
+
+.me2 {
+    margin-right: var(--mp2);
+}
+
+.me3 {
+    margin-right: var(--mp3);
+}
+
+.me4 {
+    margin-right: var(--mp4);
+}
+
+.me5 {
+    margin-right: var(--mp5);
+}
+
+
+
+
+/*6.  SLIDER */
+
+/* Slider için birçok yöntem denedim ama
+artık pes ediyorum kaydırma kısmını başaramadım. */
+
+/*Slider 1. Çeşidi   */
+
+.sliderContent {
+    position: relative;
+    width: 1180px;
+    height: 710px;
+    overflow: hidden;
+    margin: auto;
+    border: #301934 3px solid;
+    background-color: #30193452;
+}
+
+.slider1 {
+    display: flex;
+    height: 100%;
+    animation: slide 10s linear infinite;
+
+}
+
+.img1 {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    5% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-200%);
+    }
+
+    65% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    /* 80% {
+        transform: translateX(-330%);
+    }
+
+    90% {
+        transform: translateX(-330%);
+    } */
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/*Slider 2. Çeşidi   */
+
+.sliderContent2 {
+    /* padding-top: 30%; */
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10%;
+    border: 3px solid #00004d;
+}
+
+.slider2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    animation: slide2 10s linear infinite;
+
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    5% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-125%);
+
+    }
+
+    25% {
+        transform: translateY(-125%);
+    }
+
+    40% {
+        transform: translateY(-125%);
+    }
+
+    45% {
+        transform: translateY(-240%);
+    }
+
+    65% {
+        transform: translateY(-240%);
+    }
+
+    75% {
+        transform: translateY(-200%);
+    }
+
+    /*     
+        80% {
+            transform: translateY(-330%);
+        }
+    
+        90% {
+            transform: translateY(-330%);
+        } */
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+/* Slider 3. Çeşidi   */
+/* .sliderContent3 {
+    padding-top: 120px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider3 {
+    display: flex;
+    height: 100%;
+    animation: slide 10s linear infinite;
+
+}
+
+.img3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    5% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+
+
+    15% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-200%);
+    }
+
+    65% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+} */
+
+.sliderContent3 {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+
+    vertical-align: middle;
+}
+
+.slider3 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+    overflow-x: auto;
+    padding: 24px;
+    gap: 24px;
+
+}
+
+.img3 {
+    border-radius: 20%;
+    overflow: hidden;
+    border: #00004d 2px solid;
+}
+
+.img3 img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+
+/*7. TABLES */
+/* table {
+    justify-content: center;
+    text-align: center;
+    background-color: #4f082c7b;
+    table-layout: fixed;
+    border-collapse: collapse;
+} */
+
+/* Responsive Table  */
+.responsiveTable {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Bordered Table */
+.borderedTable {
+    border: 1px solid #3019344f;
+}
+
+.borderedTable th,
+.borderedTable td {
+    border: 1px solid #3019344f;
+    padding: var(--pp1);
+}
+
+/* Striped Table */
+.stripedTable tbody tr:nth-child(even) {
+    background-color: #3019344f;
+}
+
+/* Hoverable Table */
+.hoverableTable tbody tr:hover {
+    background-color: #3019344f;
+}
+
+/*8. IMAGES */
+
+/* Border image classı */
+.image1 {
+    width: 100%;
+    height: 500px;
+    border-radius: 20%;
+}
+
+/* Daire formatında image için */
+.image2 {
+    width: 100%;
+    height: 500px;
+    border-radius: 50%;
+}
+
+/* Normal image classı */
+.image3 {
+    width: 100%;
+    height: 500px;
+}
+
+/* Çerçeveli image için */
+.image4 {
+    width: 100%;
+    height: 500px;
+    border: 4px solid #00004d;
+}
+
+
+/* 9. BUTTON TYPES */
+
+/* Normal Button */
+.nBtn {
+    background-color: #ffffff;
+    color: #000000 !important;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px #000000;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+/* Outline Button */
+.oBtn {
+    margin: 5px;
+    background-color: #0b560046;
+    color: #000000 !important;
+    border: 1px solid #0c5600;
+    box-shadow: 2px 2px 2px #000000;
+    padding: 5px;
+    transition: background-color 1s;
+}
+
+.oBtn:hover {
+    background-color: #0c5600;
+}
+
+/* Button Color Claas */
+
+.btnColors {
+    display: flex;
+    padding: 10px;
+}
+
+/* Red */
+.txtRed {
+    color: #d80202 !important;
+    font-size: 20px;
+    /* justify-content: center; */
+    text-align: center;
+    vertical-align: center;
+}
+
+.nRed {
+    background-color: #d99f9f;
+    color: #420c09 !important;
+    border: 1px solid #420c09;
+    box-shadow: 2px 2px 2px #420c09;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color 1s;
+}
+
+.nRed:hover {
+    background-color: #b03a3a !important;
+}
+
+/* Blue */
+.txtBlue {
+    color: #48c9fc !important;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nBlue {
+    background-color: #26619c;
+    color: #00004d !important;
+    border: 1px solid #00004d;
+    box-shadow: 2px 2px 2px #00004d;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+}
+
+.nBlue:hover {
+    background-color: #1f80aa9b !important;
+}
+
+/* Green */
+
+.txtGreen {
+    color: #83a381;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nGreen {
+    background-color: #3DAC78;
+    color: #14452F !important;
+    border: 1px solid #14452F;
+    box-shadow: 2px 2px 2px #14452F;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+}
+
+.nGreen:hover {
+    background-color: #64e9ab;
+    color: #14452F;
+}
+
+
+/* Yellow */
+
+.txtYellow {
+    color: #d3d00a;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nYellow {
+    background-color: #f9e324;
+    color: #a39e09 !important;
+    border: 1px solid #a39e09;
+    box-shadow: 2px 2px 2px #a39e09;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+}
+
+.nYellow:hover {
+    background-color: #f3efaa !important;
+
+}
+
+/* Purple */
+
+.txtPurple {
+    color: #301934;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nPurple {
+    background-color: #800080;
+    color: #301934 !important;
+    border: 1px solid #301934;
+    box-shadow: 2px 2px 2px #301934;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+}
+
+.nPurple:hover {
+    background-color: #c979d7d4;
+}
+
+/* Brown */
+.txtBrown {
+    color: #7F4F24;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nBrown {
+    background-color: #936639;
+    color: #64360f !important;
+    border: 1px solid #64360f;
+    box-shadow: 2px 2px 2px #64360f;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+}
+
+.nBrown:hover {
+    background-color: #a88363;
+}
+
+/* Gray */
+
+.txtGray {
+    color: #5a5a5a;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nGray {
+    background-color: #939393;
+    color: #5a5a5a !important;
+    border: 1px solid #5a5a5a;
+    box-shadow: 2px 2px 2px #5a5a5a;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+
+}
+
+.nGray:hover {
+    background-color: #b6b6b6 !important;
+
+}
+
+/* Orange */
+
+
+.txtOrange {
+    color: #F05E16;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nOrange {
+    background-color: #FA9C1B;
+    color: #F05E16 !important;
+    border: 1px solid #F05E16;
+    box-shadow: 2px 2px 2px #F05E16;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+
+}
+
+.nOrange:hover {
+    background-color: #f9b960;
+}
+
+/* Pink */
+
+.txtPink {
+    color: #980142;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nPink {
+    background-color: #f791e4;
+    color: #980142 !important;
+    border: 1px solid #980142;
+    box-shadow: 2px 2px 2px #980142;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+
+}
+
+.nPink:hover {
+    background-color: #e7478cd1;
+}
+
+/* White */
+
+.txtWhite {
+    color: #dec1cc;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.nWhite {
+    background-color: #ffffd3;
+    color: #a19b9b !important;
+    border: 1px solid #5f5f5f;
+    box-shadow: 2px 2px 2px #3d3d3d;
+    padding: 10px;
+    transition: background-color 1s;
+    margin: 5px;
+
+}
+
+.nWhite:hover {
+    background-color: #b5b2b2d8;
+}
+
+
+/* 10. Resimlerin yerleşimi */
+/* oflow = overflow */
+/* Her açıdan div içinde ortalanmış hali */
+.oflow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 500px;
+    width: 100%; */
+    margin: 20px;
+}
+
+.oflow1 img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Yalnızca yüksekliğinin ortalanması */
+.oflow2 {
+    height: 300px;
+    margin: 20px;
+    overflow-x: none;
+    overflow-y: scroll;
+    width: 30%;
+}
+
+.oflow2 img {
+    width: 100%;
+}
+
+/* yalnızca genişliğinin ortalanması */
+.oflow3 {
+    height: auto;
+    width: 200px;
+    margin: 50px;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: none;
+}
+
+
+.oflow3 img {
+    height: auto;
+}
+
+/* overflow hidden */
+
+.oflow4 {
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+}
+
+
+/* 11. Nav Menü */
+/* Yatay Nav Bar */
+.header1 {
+    width: 100%;
+    float: left;
+
+    /* padding-right: 25px;
+    padding-left: 25px; */
+    text-align: center;
+}
+
+/* .headerMenu1 {
+    margin-right: 250px;
+    margin-left: 250px;
+
+} */
+
+.menuItem1 {
+    align-items: center;
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: 2px;
+    background-color: #30193449;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #301934;
+    transition: background-color 950ms;
+}
+
+.menuItem1:hover {
+    color: #301934;
+    background-color: #ba81c4c6;
+}
+
+.menuItem1 a {
+    text-decoration: none;
+}
+
+.menuItem1 a:hover {
+    color: #301934;
+}
+
+
+/* Block Nav Bar */
+.header2 {
+    width: 150px;
+    background-color: #3019345f;
+    top: 0;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.headerMenu2 {
+    list-style-type: none;
+}
+
+.menuItem2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.menuItem2:hover {
+    color: #301934;
+    background-color: #3019343e;
+}
+
+.menuItem2 a {
+    text-decoration: none;
+}
+
+.menuItem2 a:hover {
+    color: #301934;
+}
+
+/* Dikey Sola Yatık Nav Bar  */
+.header3 {
+    width: 150px;
+    background-color: #3019345f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.headerMenu3 {
+    list-style-type: none;
+    padding: 0;
+    margin: o;
+
+}
+
+.menuItem3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.menuItem3:hover {
+    color: #301934;
+    background-color: #3019343e;
+}
+
+.menuItem3 a {
+    text-decoration: none;
+    display: block;
+
+}
+
+.menuItem3 a:hover {
+    color: #301934;
+}
+
+
+/* 12. Dropdown Menü */
+.dropdown {
+    background-color: #3019342f;
+}
+
+.dropMenu {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.dropMenu a {
+    text-decoration: none;
+    display: block;
+}
+
+.dropMenu .ddBtn {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropMenu li:hover ul {
+    display: block;
+    list-style: none;
+}
+
+.dropMenu .ddBtn a {
+    background-color: #3d14456c;
+    padding: 10px 15px;
+}
+
+.dropMenu .ddBtn ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    /* left: 10px; */
+    width: 100px;
+    /* border: 1px solid #0c5600; */
+    /* background-color: #45142d56; */
+}
+
+ul .ddBtn a {
+    color: #301934;
+    padding: 10px 20px;
+
+}
+
+.dropMenu li ul li:hover a {
+    background-color: #3019345c;
+    border-radius: 4px;
+}
+
+
+/*13.  Form */
+
+input {
+    background-color: rgba(128, 128, 128, 0.05)
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 20px;
+    margin-top: var(--mp1);
+    box-sizing: border-box;
+    border: 3px solid rgb(73, 1, 1);
+    border-radius: 8px;
+    padding: 10px;
+    /* text-align: center;  çalıştıramadım */
+}
+
+input[type=text1] {
+    width: 10%;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 2px solid #301934;
+    background-color: #30193477;
+    border-radius: 8px;
+    padding: 5px;
+    transition: background-color 1s;
+}
+
+input[type=text1]:hover {
+    background-color: #301934a7;
+}
+
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #30193477;
+    border: 2px solid #301934;
+    color: #39025c;
+    padding: 16px 32px;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .gc-m-1 {
+        grid-column: span 1;
+    }
+
+    .gc-m-2 {
+        grid-column: span 2;
+    }
+
+    .gc-m-3 {
+
+        grid-column: span 3;
+
+    }
+
+    .gc-m-4 {
+        grid-column: span 4;
+
+    }
+
+    .gc-m-5 {
+        grid-column: span 5;
+
+    }
+
+    .gc-m-6 {
+        grid-column: span 6;
+
+    }
+
+    .gc-m-7 {
+        grid-column: span 7;
+    }
+
+    .gc-m-8 {
+        grid-column: span 8;
+
+    }
+
+    .gc-m-9 {
+        grid-column: span 9;
+    }
+
+    .gc-m-10 {
+        grid-column: span 10;
+    }
+
+    .gc-m-11 {
+        grid-column: span 11;
+
+    }
+
+    .gc-m-12 {
+        grid-column: span 12;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .gc-s-1 {
+        grid-column: span 1;
+    }
+
+    .gc-s-2 {
+        grid-column: span 2;
+    }
+
+    .gc-s-3 {
+
+        grid-column: span 3;
+
+    }
+
+    .gc-s-4 {
+        grid-column: span 4;
+
+    }
+
+    .gc-s-5 {
+        grid-column: span 5;
+
+    }
+
+    .gc-s-6 {
+        grid-column: span 6;
+
+    }
+
+    .gc-s-7 {
+        grid-column: span 7;
+    }
+
+    .gc-s-8 {
+        grid-column: span 8;
+
+    }
+
+    .gc-s-9 {
+        grid-column: span 9;
+    }
+
+    .gc-s-10 {
+        grid-column: span 10;
+    }
+
+    .gc-s-11 {
+        grid-column: span 11;
+
+    }
+
+    .gc-s-12 {
+        grid-column: span 12;
+    }
+
+
+}
